@@ -18,16 +18,7 @@ noContext.addEventListener('contextmenu', e => {
   e.preventDefault();
 });
 
-//dblclick and return.
-const img2 = document.querySelectorAll(".img-content img")[1];
-img2.addEventListener("dblclick", () => {
-  img2.src = "img/bus.jpg"
-})
-img2.onmouseout = logMouseOut2;
 
-function logMouseOut2() {
-    img2.src = 'img/fun.jpg';
-  }
 
 //On Wheel
 function zoom(event) {
@@ -60,6 +51,16 @@ function logMouseOut() {
   img.src = 'img/adventure.jpg';
 }
 
+//dblclick and return.
+const img2 = document.querySelectorAll(".img-content img")[1];
+img2.addEventListener("dblclick", () => {
+  img2.src = "img/bus.jpg"
+})
+img2.onmouseout = logMouseOut2;
+
+function logMouseOut2() {
+    img2.src = 'img/fun.jpg';
+  }
 
 //drag and drop.
 var dragged;
@@ -131,6 +132,9 @@ links.forEach(link => {
 // }
 let backg = document.querySelector("body");
 window.addEventListener("scroll", () => {
+    backg.style.color = "white";
+    whatADrag.style.color = "black";
+    document.querySelector(".logo-heading").style.color = "blue";
     backg.style.backgroundImage = "linear-gradient(green, blue, black)";})
 
 let foot = document.querySelector(".footer p")
