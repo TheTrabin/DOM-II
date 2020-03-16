@@ -67,7 +67,7 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
-
+      
       @media @mobile {
         order: 2;
       }
@@ -100,15 +100,34 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
-
+      
+      
       @media @mobile {
         width: 80%;
         margin: 0 auto 30px;
       }
       
       .btn {
-        .button-creator(200px, 45px, @button-bg, @white, 1.8rem);     
+        .button-creator(200px, 45px, @button-bg, @white, 1.8rem); 
+        }
       }
     }
+    
+  
+
+  #whatADrag {
+    width: 200px;
+    height: 20px;
+    text-align: center;
+    background: white;
   }
+  
+  .dzone {
+    width: 200px;
+    height: 20px;
+    background: blue;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
 }// home

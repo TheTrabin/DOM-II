@@ -350,3 +350,16 @@ img {
   background: #FFFFFF;
   color: #17A2B8;
 }
+.home #whatADrag {
+  width: 200px;
+  height: 20px;
+  text-align: center;
+  background: white;
+}
+.home .dzone {
+  width: 200px;
+  height: 20px;
+  background: blue;
+  margin-bottom: 10px;
+  padding: 10px;
+}
